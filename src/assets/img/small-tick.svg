@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="5px" viewBox="0 0 7 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Signed-in---Step-3" transform="translate(-889.000000, -471.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-9" transform="translate(884.000000, 459.000000)">
+                <g id="tick" transform="translate(0.000000, 6.000000)">
+                    <path d="M11.7264901,6.46673126 C11.5291804,6.25272072 11.2002308,6.24329499 10.9918552,6.4467724 L7.67429356,9.6831732 L6.09191048,8.01195948 C5.89149632,7.80044701 5.56289722,7.79581141 5.35710029,8.00199292 C5.15147862,8.20796841 5.14714737,8.546342 5.34738627,8.75785446 L7.28748547,10.8068187 C7.38915716,10.9142618 7.52427711,10.9684211 7.65974757,10.9684211 C7.78828302,10.9684211 7.91681848,10.9195927 8.01746369,10.8217814 L11.7071121,7.22243828 C11.9153125,7.01929566 11.9241253,6.68092208 11.7264901,6.46673126 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
