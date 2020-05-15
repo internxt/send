@@ -1,5 +1,7 @@
 import React from 'react';
 import './LinkSettings.scss';
+import checkCircle from './../../assets/img/check-circle-regular.svg';
+import circle from './../../assets/img/circle-regular.svg';
 
 class LinkSettings extends React.Component {
     render() {
@@ -20,9 +22,18 @@ class LinkSettings extends React.Component {
                 </div>
 
                 <div className="col-md-12 __link-settings-container-3">
-                    <span className="__link-settings-check-text">Limit the amount your link can open</span>
-                    <span className="__link-settings-check-text">Get an email when your link opens</span>
-                    <span className="__link-settings-check-text">Add a password to your link</span>
+                    <span className="__link-settings-check-text">
+                        <img src={checkCircle} className="__list_icon" alt="" style={{width: "5%"}}/>
+                        Limit the amount your link can open
+                    </span>
+                    <span className="__link-settings-check-text">
+                        <img src={circle} className="__list_icon" alt="" style={{width: "5%"}}/>
+                        Get an email when your link opens
+                    </span>
+                    <span className="__link-settings-check-text">
+                        <img src={circle} className="__list_icon" alt="" style={{width: "5%"}}/>
+                        Add a password to your link
+                    </span>
                 </div>
 
                 <div className="col-md-12 d-flex align-items-center __link-settings-container-4">
