@@ -1,11 +1,12 @@
 import React from 'react';
+import NavBar from './NavBar';
 import './Header.scss';
 
 class Header extends React.Component {
   render() {
     return (
       <div>
-        <p>Header Component</p>
+        <NavBar />
       </div>
     );
   }

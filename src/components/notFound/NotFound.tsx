@@ -6,14 +6,20 @@ import Footer from './../footer/Footer';
 class NotFound extends React.Component {
     render() {
         return (
-            <div>
-                <Header />
-                
-                <div className="NotFound">
-                    <h3>Sorry, page not found!</h3>
+            <div id="main" className="container-fluid">
+                <div className="d-none d-sm-block row __header">
+                    <Header />
                 </div>
 
-                <Footer />
+                <div className="__body">
+                    <div className="NotFound">
+                        <h3>Sorry, page not found!</h3>
+                    </div>
+                </div>
+
+                <div className="d-none d-sm-block row __footer">
+                    <Footer />
+                </div>
             </div>
         );
     }

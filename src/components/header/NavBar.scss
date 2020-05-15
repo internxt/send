@@ -1,0 +1,38 @@
+.__title-0 {
+    font-size: 28.2px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.77px;
+    color: var(--full-black);
+}
+
+.__title-1 {
+    width: 62px;
+    height: 34px;
+    font-size: 28.2px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -1.02px;
+    color: var(--full-black);
+}
+
+.__navbar-logo {
+    padding: 0.5rem 0.5rem !important;
+}
+
+/* LAPTOP VIEWS */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .__logo {
+        height: 35px;
+    }
+}
+
+@media (min-width: 1281px) {
+    .__logo {
+        height: 35px;
+    }
+}

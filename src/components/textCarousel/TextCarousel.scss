@@ -1,0 +1,52 @@
+/* LAPTOP VIEWS */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .__carousel-text {
+        width: auto;
+        height: auto;
+        font-size: 30px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.32;
+        letter-spacing: -0.18px;
+        color: var(--full-black);
+    }
+
+    .__carousel-blue-text {
+        width: auto;
+        height: auto;
+        font-size: 30px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: -0.18px;
+        color: #4096ff;
+    }
+}
+
+@media (min-width: 1281px) {
+    .__carousel-text {
+        width: auto;
+        height: auto;
+        font-size: 44px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.32;
+        letter-spacing: -0.18px;
+        color: var(--full-black);
+    }
+
+    .__carousel-blue-text {
+        width: auto;
+        height: auto;
+        font-size: 44px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: -0.18px;
+        color: #4096ff;
+    }
+}

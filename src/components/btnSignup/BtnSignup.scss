@@ -1,0 +1,70 @@
+/* LAPTOP VIEWS */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .__signup {
+        width: auto !important;
+        height: auto !important;
+        border-radius: 40px !important;
+        -webkit-backdrop-filter: blur(12.2px) !important;
+        backdrop-filter: blur(12.2px) !important;
+        background-color: #f5fbff !important;
+
+        &:hover {
+            border: none;
+        }
+    }
+
+    .__signup-text {
+        font-size: 13px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.09px;
+        color: #035087;
+    }
+
+    .__body-signup-avatar {
+        width: auto;
+        height: auto;
+        margin-right: 6px;
+    }
+
+    .popover .arrow {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1281px) {
+    .__signup {
+        width: 260px !important;
+        height: 25% !important;
+        border-radius: 40px !important;
+        -webkit-backdrop-filter: blur(12.2px) !important;
+        backdrop-filter: blur(12.2px) !important;
+        background-color: #f5fbff !important;
+
+        &:hover {
+            border: none;
+        }
+    }
+
+    .__signup-text {
+        font-size: 15px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.09px;
+        color: #035087;
+    }
+
+    .__body-signup-avatar {
+        width: auto;
+        height: auto;
+        margin-right: 6px;
+    }
+
+    .popover .arrow {
+        display: none !important;
+    }
+}

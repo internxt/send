@@ -1,0 +1,91 @@
+.__add-file-container {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        border-radius: 30px;
+}
+
+.__add-file-section-1 {
+    height: 50%;
+}
+
+.__add-file-section-2 {
+    height: 50%;
+}
+
+.__add-file-section-1-container {
+    margin: auto;
+    width: 75%;
+    height: 50%;
+    border-radius: 30px;
+    box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.01);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.__add-file-section-1-text {
+    width: 84%;
+    height: 60%;
+    margin: auto;
+    font-size: 100%;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: 0.75px;
+    text-align: center;
+    color: var(--white);
+    font-weight: 600;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .__add-file-section-1-text {
+        width: 84%;
+        height: 60%;
+        margin: auto;
+        font-size: 100%;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.7;
+        letter-spacing: 0.75px;
+        text-align: center;
+        color: var(--white);
+        font-weight: 600;
+    }
+}
+
+.__add-file-section-2-container {
+    width: 45%;
+    height: 50%;
+    margin: auto;
+}
+
+.__add-file-section-2-text-1 {
+    font-size: 15.9px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white);
+}
+
+.__add-file-section-2-text-2 {
+    font-size: 14.7px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.19;
+    letter-spacing: normal;
+    text-align: center;
+    color: #96e3ff;
+}
+
+.__add-file-section-2-img {
+    width: 45%;
+    height: 90%;
+    margin: auto;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

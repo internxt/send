@@ -1,0 +1,24 @@
+/* LAPTOP VIEWS */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .__footer-text {
+        font-size: 0.8em;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+        text-align: right;
+        margin-right: 5px;
+        margin-top: 25px;
+        color: #989898;
+    }
+}
+
+@media (min-width: 1281px) {
+    .__footer-text {
+        font-size: 0.8em;
+        font-weight: 500;
+        letter-spacing: 0.7px;
+        text-align: right;
+        margin-right: 25px;
+        margin-top: 25px;
+        color: #989898;
+    }
+}

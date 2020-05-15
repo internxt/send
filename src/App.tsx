@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Share from './components/Share/Share';
+import Share from './components/share/Share';
 import NotFound from './components/notFound/NotFound';
 
 class App extends React.Component {
