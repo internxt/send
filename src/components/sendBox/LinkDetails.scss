@@ -1,0 +1,50 @@
+.__section-1 {
+    width: 100%;
+    height: 50%;
+}
+
+.__section-2 {
+    width: 100%;
+    height: 30%;
+
+    &>.__link {
+        width: 70%;
+        margin: auto;
+        opacity: 0.15;
+        border-radius: 23px;
+        background-color: #0000FF;
+
+        &>.__link-text {
+            margin:auto;
+            font-size: 0.71vw;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            text-align: center;
+            color: var(--white);
+        }
+    }
+}
+
+.__section-3 {
+    width: 100%;
+    height: 20%;
+
+    &>.__btn-create-link {
+        margin: auto;
+        font-size: 0.7vw;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
