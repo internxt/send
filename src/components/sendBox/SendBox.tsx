@@ -14,10 +14,10 @@ class SendBox extends React.Component {
             <div className="__sendbox">
                 {/* <AddFile /> */}
                 {/* <ListFiles /> */}
-                {/* <DownloadByPassword /> */}
+                <DownloadByPassword />
                 {/* <DownloadFile /> */}
                 {/* <LinkSettings /> */}
-                <UploadFile />
+                {/* <UploadFile /> */}
                 {/* <LinkDetails link='https://send.internxt.com/3adr42d' /> */}
             </div>
         );
