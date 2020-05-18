@@ -101,4 +101,8 @@
 
 .__list_icon {
     margin-right: 2%;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
