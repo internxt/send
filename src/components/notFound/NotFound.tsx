@@ -1,26 +1,27 @@
 import React from "react";
 import "./NotFound.scss";
+import { Container, Row } from 'react-bootstrap';
 import Header from './../header/Header';
 import Footer from './../footer/Footer';
 
 class NotFound extends React.Component {
     render() {
         return (
-            <div id="main" className="container-fluid">
-                <div className="d-none d-sm-block row __header">
+            <Container id="main" fluid>
+                <Row className="__header">
                     <Header />
-                </div>
+                </Row>
 
-                <div className="__body">
-                    <div className="NotFound">
+                <Container className="__body-not-found">
+                    <Container className="__not-found d-flex align-items-center">
                         <h3>Sorry, page not found!</h3>
-                    </div>
-                </div>
+                    </Container>
+                </Container>
 
-                <div className="d-none d-sm-block row __footer">
+                <Row className="__footer">
                     <Footer />
-                </div>
-            </div>
+                </Row>
+            </Container>
         );
     }
 }

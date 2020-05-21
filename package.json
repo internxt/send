@@ -17,6 +17,7 @@
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
+    "pure-react-carousel": "^1.27.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-circular-progressbar": "^2.0.3",

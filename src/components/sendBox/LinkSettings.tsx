@@ -6,7 +6,7 @@ import circle from './../../assets/img/circle-regular.svg';
 class LinkSettings extends React.Component {
     render() {
         return(
-            <div className="container" style={{width: '100%', height: '100%', padding: '10%'}}>
+            <div className="container" style={{width: '100%', height: '100%', paddingTop: '10%', paddingBottom: '10%'}}>
                 <div className="col-md-12 __link-settings-container-1">
                     <span className="__link-settings-email">gtormo@internxt.com</span>
                     <div className="__link-settings-separator"></div>

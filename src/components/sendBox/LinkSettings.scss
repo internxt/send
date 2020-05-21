@@ -19,12 +19,12 @@
 }
 
 .__link-settings-email {
-    font-size: 0.85vw;
+    font-size: 0.75rem;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.91;
-    letter-spacing: 0.11px;
+    letter-spacing: 0.05rem;
     color: var(--white);
 }
 
@@ -46,32 +46,32 @@
 
 .__link-settings-text-1 {
     height: 50%;
-    font-size: 0.85vw;
+    font-size: 0.75rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.69;
-    letter-spacing: 0.11px;
+    letter-spacing: 0.05rem;
     color: var(--white);
 }
 
 .__link-settings-text-2 {
-    font-size: 0.65vw;
+    font-size: 0.6rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 2.08;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.01px;
     color: var(--white);
 }
 
 .__link-settings-check-text {
-    font-size: 0.85vw;
+    font-size: 0.75rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.91;
-    letter-spacing: 0.11px;
+    letter-spacing: 0.01px;
     color: var(--white);
     display: block;
 }
@@ -79,16 +79,16 @@
 .__btn-create-link {
     width: 35%;
     height: 50%;
-    border-radius: 36.6px;
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
+    border-radius: 2.2rem;
+    -webkit-backdrop-filter: blur(0.7rem);
+    backdrop-filter: blur(0.7rem);
     background-color: var(--white);
-    font-size: 0.9vw;
+    font-size: 0.8rem;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: 2.04;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.01rem;
     border: none;
     color: #0987f5;
     margin: auto;

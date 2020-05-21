@@ -5,9 +5,7 @@ import './Header.scss';
 class Header extends React.Component {
   render() {
     return (
-      <div>
         <NavBar />
-      </div>
     );
   }
 }

@@ -1,8 +1,36 @@
 import React from 'react';
 import './DownloadFile.scss';
 import downloadFileIcon from './../../assets/img/download.svg';
+import { Container, Col, Row } from 'react-bootstrap';
 
-class DownloadFile extends React.Component {
+interface Props {
+    files: Number,
+    size: {
+        quantity: Number,
+        mesure: String
+    }
+}
+interface State {
+    files: Number,
+    size: {
+        quantity: Number,
+        mesure: String
+    }
+}
+
+class DownloadFile extends React.Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
+
+        this.state = {
+            files: this.props.files,
+            size: {
+                quantity: this.props.size.quantity,
+                mesure: this.props.size.mesure
+            }
+        };
+    }
+
     render() {
         return(
             <div className="__download-file-container">
@@ -28,7 +56,9 @@ class DownloadFile extends React.Component {
                                 
                                 <div className="col-md-12">
                                     <div className="__download-file-section-2-text-1">Download files</div>
-                                    <div className="__download-file-section-2-text-2">4 files - 5 GB</div>
+                                    <div className="__download-file-section-2-text-2">
+                                        {this.state.files} files - {this.state.size.quantity} {this.state.size.mesure}
+                                    </div>
                                 </div>
 
                             </div>

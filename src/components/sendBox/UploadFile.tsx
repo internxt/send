@@ -1,22 +1,23 @@
 import React from 'react';
 import './UploadFile.scss';
-import { CircularProgressbar } from 'react-circular-progressbar';
+import { CircularProgressbar, CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-interface IProps {
+interface Props {}
+
+interface State {
+    files: Array<object>,
+    value: number,
+    currentSize: number,
+    totalSize: number,
 }
 
-interface IState {
-    value: any,
-    currentSize: any,
-    totalSize: any,
-}
-
-class UploadFile extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
+class UploadFile extends React.Component<Props, State> {
+    constructor(props: Props) {
         super(props);
 
         this.state = {
+            files: [],
             value: 0.00,
             currentSize: 0,
             totalSize: 928
@@ -60,14 +61,25 @@ class UploadFile extends React.Component<IProps, IState> {
         return(
             <div className="container" style={{width: '100%', height: '100%', padding: '10%'}}>
                 <div className="col-md-12 d-flex align-items-center __section-1">
-                    <CircularProgressbar className="__spinner" 
+                    {/* <CircularProgressbar className="__spinner" 
                         value={this.state.value}
                         maxValue={1}
+                        strokeWidth={5}
                         text={`${this.state.value * 100}%`}
-                    />
+                    /> */}
+
+                    <CircularProgressbarWithChildren className="__spinner"
+                        value={this.state.value}
+                        maxValue={1}
+                        strokeWidth={5}
+                    >
+                        <text className="CircularProgressbar-text">
+                            {this.state.value * 100}<span className="__percent-symbol">%</span>
+                        </text>
+                    </CircularProgressbarWithChildren>
                 </div>
                 <div className="col-md-12 __section-2">
-                    <span className="__section-2-title">Uploading 5 files</span>
+                    <span className="__section-2-title">Uploading 5 files...</span>
                     <span className="__section-2-description">
                         {this.state.currentSize} MB of {this.state.totalSize} MB
                     </span>

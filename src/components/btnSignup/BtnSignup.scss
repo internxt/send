@@ -1,5 +1,28 @@
 /* LAPTOP VIEWS */
 @media (min-width: 1025px) and (max-width: 1280px) {
+    .__dialog {
+        width: 100% !important;
+        height: auto !important;
+        padding: 6px;
+        box-shadow: 0 3px 17px 0 rgba(0, 0, 0, 0.16) !important;
+        background-color: var(--white) !important;
+        margin-top: 6px !important;
+        border: none !important;
+    }
+
+    .__dialog-text {
+        width: auto;
+        height: auto;
+        font-size: 12px !important;
+        font-weight: 500 !important;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71 !important;
+        letter-spacing: 0.12px !important;
+        text-align: center !important;
+        color: #595959 !important;
+    }
+
     .__signup {
         width: auto !important;
         height: auto !important;
@@ -10,6 +33,11 @@
 
         &:hover {
             border: none;
+        }
+
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
         }
     }
 
@@ -35,6 +63,29 @@
 }
 
 @media (min-width: 1281px) {
+    .__dialog {
+        width: 100% !important;
+        height: auto !important;
+        padding: 5px;
+        box-shadow: 0 3px 17px 0 rgba(0, 0, 0, 0.16) !important;
+        background-color: var(--white) !important;
+        margin-top: 6px !important;
+        border: none !important;
+    }
+
+    .__dialog-text {
+        width: auto;
+        height: auto;
+        font-size: 12px !important;
+        font-weight: 500 !important;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71 !important;
+        letter-spacing: 0.12px !important;
+        text-align: center !important;
+        color: #595959 !important;
+    }
+
     .__signup {
         width: 260px !important;
         height: 25% !important;
@@ -44,7 +95,13 @@
         background-color: #f5fbff !important;
 
         &:hover {
-            border: none;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        &:focus {
+            color: none;
+            box-shadow: none !important;
         }
     }
 

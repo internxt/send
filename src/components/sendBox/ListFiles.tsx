@@ -75,14 +75,13 @@ class ListFiles extends React.Component<IProps, IState> {
                                 Add more files 
                                 <span className="__add-file-text-2">3 files added - 2 GB left</span>
                             </div>
-                        </div>    
-                            
+                        </div>
                     
                     </div>
                 </div>
 
                 <div className="col-md-12 d-flex align-items-center  __list-files-section-3">
-                        <input type="button" className="__btn-create-link" value="Create link"/>
+                        <input type="button" className="__btn-create-link" value="Next"/>
                 </div>
 
             </div>

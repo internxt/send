@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Share from './components/share/Share';
 import NotFound from './components/notFound/NotFound';
+import Send from './components/Send';
 
 class App extends React.Component {
   render() {
@@ -9,7 +10,8 @@ class App extends React.Component {
       <div>
         <BrowserRouter>
           <Switch>
-            <Route exact path='/' render={() => <Share />} />
+            {/* <Route exact path='/' render={() => <Share />} /> */}
+            <Route exact path='/' render={() => <Send />} />
             <Route component={NotFound} />
           </Switch>
         </BrowserRouter>

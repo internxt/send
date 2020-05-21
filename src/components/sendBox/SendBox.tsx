@@ -7,17 +7,28 @@ import DownloadFile from './DownloadFile';
 import LinkSettings from './LinkSettings';
 import UploadFile from './UploadFile';
 import LinkDetails from './LinkDetails';
+import FileDownloaded from './FileDownloaded';
 
-class SendBox extends React.Component {
+interface Props {}
+interface State {}
+
+class SendBox extends React.Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
+
+        this.state = {};
+    }
+
     render() {
         return (
             <div className="__sendbox">
                 {/* <AddFile /> */}
                 {/* <ListFiles /> */}
-                <DownloadByPassword />
-                {/* <DownloadFile /> */}
+                {/* <DownloadByPassword /> */}
+                {/* <DownloadFile files={4} size={{quantity: 2, mesure: 'MB'}} /> */}
+                {/* <FileDownloaded /> */}
                 {/* <LinkSettings /> */}
-                {/* <UploadFile /> */}
+                <UploadFile />
                 {/* <LinkDetails link='https://send.internxt.com/3adr42d' /> */}
             </div>
         );
