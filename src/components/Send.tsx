@@ -7,6 +7,13 @@ import Footer from './footer/Footer';
 import TextCarousel from './textCarousel/TextCarousel';
 import BtnSignup from './btnSignup/BtnSignup';
 import MobileHeader from './header/MobileHeader';
+import ListFiles from './sendBox/ListFiles';
+import DownloadByPassword from './sendBox/DownloadByPassword';
+import DownloadFile from './sendBox/DownloadFile';
+import LinkSettings from './sendBox/LinkSettings';
+import UploadFile from './sendBox/UploadFile';
+import LinkDetails from './sendBox/LinkDetails';
+import FileDownloaded from './sendBox/FileDownloaded';
 
 interface Props {}
 interface State {}
@@ -44,7 +51,14 @@ class Send extends React.Component<Props, State> {
                         </Col>
 
                         <Col md={12} className="__send-box">
-                            <SendBox />
+                            {/* <SendBox /> */}
+                            {/* <SendBox internalComponent={<ListFiles />}/> */}
+                            {/* <SendBox internalComponent={<DownloadByPassword />}/> */}
+                            <SendBox internalComponent={<DownloadFile files={4} size={{quantity: 2, mesure: 'MB'}} />}/>
+                            {/* <SendBox internalComponent={<FileDownloaded />}/> */}
+                            {/* <SendBox internalComponent={<LinkSettings />}/> */}
+                            {/* <SendBox internalComponent={<UploadFile />}/> */}
+                            {/* <SendBox internalComponent={<LinkDetails link='send.internxt.com/3adr42d' />}/> */}
                         </Col>
                     </Col>
                 </Row>

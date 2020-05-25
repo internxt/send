@@ -40,7 +40,7 @@ class DownloadFile extends React.Component<Props, State> {
                         <div className="__download-file-section-1-text">
                             <p>This link has been</p>
                             <p>end-to-end encrypted</p>
-                            <p>and will expire in 7 days.</p>
+                            <p className="__p-latest">and will expire in 7 days.</p>
                         </div>
                     </div>
                 </div>

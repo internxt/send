@@ -16,10 +16,21 @@
 .__add-file-section-1-container {
     margin: auto;
     width: 75%;
-    height: 50%;
+    height: auto;
     border-radius: 1.8rem;
     box-shadow: 0 0.5rem 0.56rem 0 rgba(0, 0, 0, 0.01);
     background-color: rgba(255, 255, 255, 0.05);
+    padding-top: 7%;
+    padding-bottom: 7%;
+
+    &>p {
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+
+    & .__p-latest {
+        margin-bottom: 0;
+    }
 }
 
 .__add-file-section-1-text {

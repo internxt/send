@@ -28,12 +28,12 @@ class FileDownloaded extends React.Component<Props, State> {
                     </div>
                 </div>
 
-                <div className="col-md-12 __section-2  d-flex align-items-center">
+                <div className="col-md-12 __section-2">
                     <span className="__section-1-description-2 __download-again">Downloads files again?</span>
                 </div>
 
                 <div className="col-md-12 d-flex align-items-center __section-3">
-                    <input type="button" className="__btn-create-link" value="Create a link?"/>
+                    <input type="button" className="__btn-create-link" value="Create a new link"/>
                 </div>
             </div>
         );

@@ -39,7 +39,7 @@ class LinkDetails extends React.Component<Props, State> {
                 <div className="col-md-12 __section-2">
                     <div className="__link d-flex align-items-center">
                         <span className="__link-text">{this.state.link}</span>
-                        <img className="__copy-icon" src={copyIcon} alt=""/>
+                        <img className="__copy-icon" src={copyIcon} title="Copy" alt=""/>
                     </div>
                 </div>
                 <div className="col-md-12 d-flex align-items-center __section-3">

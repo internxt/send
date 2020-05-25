@@ -7,12 +7,12 @@
 .CircularProgressbar-text {
     fill: white !important;
     color: white !important;
-    font-size: 1.7rem;
+    font-size: 3.2rem !important;
     dominant-baseline: middle;
     text-anchor: middle;
 
     &>.__percent-symbol {
-        font-size: 1rem !important;
+        font-size: 2.2rem !important;
         letter-spacing: -0.01rem;
         vertical-align: text-top;
     }

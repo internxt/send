@@ -13,7 +13,7 @@ class AddFile extends React.Component {
                         <div className="__add-file-section-1-text">
                             <p>Send files for free.</p>
                             <p>End-to-end encrypted.</p>
-                            <p>Zero-knowledge.</p>
+                            <p className="__p-latest">Zero-knowledge.</p>
                         </div>
 
                     </div>
