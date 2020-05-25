@@ -4,7 +4,16 @@ import { Container, Row } from 'react-bootstrap';
 import Header from './../header/Header';
 import Footer from './../footer/Footer';
 
-class NotFound extends React.Component {
+interface Props {}
+interface State {}
+
+class NotFound extends React.Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
+
+        this.state = {};
+    }
+
     render() {
         return (
             <Container id="main" fluid>

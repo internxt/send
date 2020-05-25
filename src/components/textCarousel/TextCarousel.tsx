@@ -3,7 +3,16 @@ import './TextCarousel.scss';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-class TextCarousel extends React.Component {
+interface Props {}
+interface State {}
+
+class TextCarousel extends React.Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
+
+        this.state = {};
+    }
+
     render() {
         return (
 /*             <div className="row" style={{width: '100%'}}>

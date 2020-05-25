@@ -1,7 +1,8 @@
 import React from 'react';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import './DownloadFile.scss';
 import downloadFileIcon from './../../assets/img/download.svg';
-import { Container, Col, Row } from 'react-bootstrap';
+
 
 interface Props {
     files: Number,
@@ -34,8 +35,7 @@ class DownloadFile extends React.Component<Props, State> {
     render() {
         return(
             <div className="__download-file-container">
-                
-                <div className="col-md-12 __download-file-section-1 d-flex align-items-center">
+                <Col md={12} className="__download-file-section-1 d-flex align-items-center">
                     <div className="__download-file-section-1-container d-flex align-items-center">
                         <div className="__download-file-section-1-text">
                             <p>This link has been</p>
@@ -43,29 +43,32 @@ class DownloadFile extends React.Component<Props, State> {
                             <p className="__p-latest">and will expire in 7 days.</p>
                         </div>
                     </div>
-                </div>
+                </Col>
 
-                <div className="col-md-12 __download-file-section-2 d-flex align-items-center">
+                <Col md={12} className="__download-file-section-2 d-flex align-items-center">
                     <div className="__download-file-section-2-container d-flex align-items-center">
-                        
-                        <div className="container" style={{width: '100%', height: '100%'}}>
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <img className="__download-file-section-2-img d-flex align-items-center" src={downloadFileIcon} alt=""/>
-                                </div>
-                                
-                                <div className="col-md-12">
+
+                        <Container style={{width: '100%', height: '100%'}}>
+                            <Row>
+                                <Col md={12}>
+                                    <Image 
+                                        alt="Download file"
+                                        src={downloadFileIcon}
+                                        className="__download-file-section-2-img d-flex align-items-center"
+                                    />
+                                </Col>
+
+                                <Col md={12}>
                                     <div className="__download-file-section-2-text-1">Download files</div>
                                     <div className="__download-file-section-2-text-2">
                                         {this.state.files} files - {this.state.size.quantity} {this.state.size.mesure}
                                     </div>
-                                </div>
+                                </Col>
+                            </Row>
+                        </Container>
 
-                            </div>
-                        </div>
                     </div>
-                </div>
-            
+                </Col>
             </div>
         );
     }

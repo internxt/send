@@ -1,22 +1,20 @@
 import React from 'react';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import addFilesIcon from './../../assets/img/add-files.svg';
 import './ListFiles.scss';
 
-/**
- * Scroll bar Samples: https://bootstrapious.com/p/bootstrap-scrollbar
- */
-interface IProps {
+interface Props {
 }
 
-interface IState {
+interface State {
     files: Array<{
         name: String,
         size: String
     }>
 }
 
-class ListFiles extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
+class ListFiles extends React.Component<Props, State> {
+    constructor(props: Props) {
         super(props);
 
         this.state = {
@@ -43,47 +41,44 @@ class ListFiles extends React.Component<IProps, IState> {
 
     getFileList() {
         return (
-            <div className="row">
+            <Row>
                 {this.state.files.map((file, index) => 
-                    <div className="col-md-12">
-                        <span className="__item-file-name">{file.name}</span>
-                        <span className="__item-file-size">{file.size}</span>
-
-                        <div className="__line-separator"></div>
-                    </div>
+                    <Col md={12}>
+                            <span className="__item-file-name">{file.name}</span>
+                            <span className="__item-file-size">{file.size}</span>
+                            <div className="__line-separator"></div>
+                    </Col>
                 )}
-            </div>
+            </Row>
+
+            
         );
     }
 
     render() {
         return(
             <div className="__list-files-container">
-
-                <div className="col-md-12 __list-files-section-1">
-                    <div className="container" style={{width: '100%', height: '100%'}}>
+                <Col md={12} className="__list-files-section-1">
+                    <Container style={{width: '100%', height: '100%'}}>
                         {this.getFileList()}
-                    </div>
-                </div>
+                    </Container>
+                </Col>
 
-                <div className="col-md-12 __list-files-section-2">
-                    <div className="container" style={{width: '100%', height: '100%', paddingLeft: 0}}>
-
-                        <div className="row">
-                            <div className="col-md-12 __add-file-text-1">
+                <Col md={12} className="__list-files-section-2">
+                    <Container style={{width: '100%', height: '100%', paddingLeft: 0}}>
+                        <Row>
+                            <Col md={12} className="__add-file-text-1">
                                 <img className="__add-file-icon" src={addFilesIcon} alt="Add more files"/>
                                 Add more files 
                                 <span className="__add-file-text-2">3 files added - 2 GB left</span>
-                            </div>
-                        </div>
-                    
-                    </div>
-                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+                </Col>
 
-                <div className="col-md-12 d-flex align-items-center  __list-files-section-3">
-                        <input type="button" className="__btn-create-link" value="Next"/>
-                </div>
-
+                <Col md={12} className="d-flex align-items-center __list-files-section-3">
+                    <input type="button" className="__btn-create-link" value="Next"/>
+                </Col>
             </div>
         );
     }

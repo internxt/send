@@ -20,11 +20,11 @@ class BtnSignup extends React.Component<Props, State> {
                 key='bottom'
                 placement='bottom'
                 overlay={
-                <Popover id={'popover-positioned-bottom'} className="__dialog">
-                    <Popover.Content className="__dialog-text">
-                        Share files up to 7 GB, set password protection, enable email notifications, limit link openings, delete links, and see how many times your link was opened.
-                    </Popover.Content>
-                </Popover>
+                    <Popover id={'popover-positioned-bottom'} className="__dialog">
+                        <Popover.Content className="__dialog-text">
+                            Share files up to 7 GB, set password protection, enable email notifications, limit link openings, delete links, and see how many times your link was opened.
+                        </Popover.Content>
+                    </Popover>
                 }
             >
                 <Button variant="light" className="__signup"><img className="__body-signup-avatar" src={signUpIcon}></img><span className="__signup-text">  Sign up for more features</span></Button>

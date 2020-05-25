@@ -1,21 +1,32 @@
 import React from 'react';
+import { Container, Col } from 'react-bootstrap';
 import './DownloadByPassword.scss';
 
-class DownloadByPassword extends React.Component {
+interface Props {}
+interface State {}
+
+class DownloadByPassword extends React.Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
+        this.state = {};
+    }
+
     render() {
         return(
-            <div className="container" style={{width: '100%', height: '100%', padding: '10%'}}>
-                <div className="col-md-12 __password-hidden"></div>
-                <div className="col-md-12 __password-info d-flex align-items-center">
-                    <div style={{margin: 'auto'}}>
-                        <span className="__password-info-title">Password protected</span>
-                        <span className="__password-info-description">Enter password to download the files</span>
-                    </div>
+            <Container style={{width: '100%', height: '100%', padding: '10%'}}>
+            <Col md={12} className="__password-hidden"></Col>
+            
+            <Col md={12} className="__password-info d-flex align-items-center">
+                <div style={{margin: 'auto'}}>
+                    <span className="__password-info-title">Password protected</span>
+                    <span className="__password-info-description">Enter password to download the files</span>
                 </div>
-                <div className="col-md-12 __password-input">
-                    <input type="password" className="d-flex align-items-center" placeholder="Password"/>
-                </div>
-            </div>
+            </Col>
+
+            <Col md={12} className="__password-input">
+                <input type="password" className="d-flex align-items-center" placeholder="Password"/>
+            </Col>
+        </Container>
         );
     }
 }

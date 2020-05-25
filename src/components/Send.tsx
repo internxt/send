@@ -51,10 +51,10 @@ class Send extends React.Component<Props, State> {
                         </Col>
 
                         <Col md={12} className="__send-box">
-                            {/* <SendBox /> */}
+                            <SendBox />
                             {/* <SendBox internalComponent={<ListFiles />}/> */}
                             {/* <SendBox internalComponent={<DownloadByPassword />}/> */}
-                            <SendBox internalComponent={<DownloadFile files={4} size={{quantity: 2, mesure: 'MB'}} />}/>
+                            {/* <SendBox internalComponent={<DownloadFile files={4} size={{quantity: 2, mesure: 'MB'}} />}/> */}
                             {/* <SendBox internalComponent={<FileDownloaded />}/> */}
                             {/* <SendBox internalComponent={<LinkSettings />}/> */}
                             {/* <SendBox internalComponent={<UploadFile />}/> */}

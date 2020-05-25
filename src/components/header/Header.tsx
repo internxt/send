@@ -2,7 +2,16 @@ import React from 'react';
 import NavBar from './NavBar';
 import './Header.scss';
 
-class Header extends React.Component {
+interface Props {}
+interface State {}
+
+class Header extends React.Component<Props, State> {
+  constructor(props: Props) {
+    super(props);
+
+    this.state = {};
+  }
+
   render() {
     return (
         <NavBar />

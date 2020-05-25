@@ -1,6 +1,7 @@
 import React from 'react';
+import { Container, Col } from 'react-bootstrap';
 import './UploadFile.scss';
-import { CircularProgressbar, CircularProgressbarWithChildren } from 'react-circular-progressbar';
+import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 interface Props {}
@@ -59,35 +60,31 @@ class UploadFile extends React.Component<Props, State> {
 
     render() {
         return(
-            <div className="container" style={{width: '100%', height: '100%', padding: '10%'}}>
-                <div className="col-md-12 d-flex align-items-center __section-1">
-                    {/* <CircularProgressbar className="__spinner" 
-                        value={this.state.value}
-                        maxValue={1}
-                        strokeWidth={5}
-                        text={`${this.state.value * 100}%`}
-                    /> */}
-
+            <Container style={{width: '100%', height: '100%', padding: '10%'}}>
+                <Col md={12} className="d-flex align-items-center __section-1">
                     <CircularProgressbarWithChildren className="__spinner"
-                        value={this.state.value}
-                        maxValue={1}
-                        strokeWidth={5}
-                    >
+                            value={this.state.value}
+                            maxValue={1}
+                            strokeWidth={5}
+                        >
+
                         <text className="CircularProgressbar-text">
                             {this.state.value * 100}<span className="__percent-symbol">%</span>
                         </text>
                     </CircularProgressbarWithChildren>
-                </div>
-                <div className="col-md-12 __section-2">
-                    <span className="__section-2-title">Uploading 5 files...</span>
-                    <span className="__section-2-description">
-                        {this.state.currentSize} MB of {this.state.totalSize} MB
-                    </span>
-                </div>
-                <div className="col-md-12 d-flex align-items-center __section-3">
+                </Col>
+
+                <Col md={12} className="__section-2">
+                        <span className="__section-2-title">Uploading 5 files...</span>
+                        <span className="__section-2-description">
+                            {this.state.currentSize} MB of {this.state.totalSize} MB
+                        </span>
+                </Col>
+
+                <Col md={12} className="d-flex align-items-center __section-3">
                     <input type="button" className="__btn-cancel-link" value="Cancel"/>
-                </div>
-            </div>
+                </Col>
+            </Container>
         );
     }
 }
